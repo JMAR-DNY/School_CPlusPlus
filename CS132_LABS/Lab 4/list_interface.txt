@@ -1,0 +1,207 @@
+// HEADER  : list.h
+// PURPOSE : This file provides the definition for the List ADT.
+
+// BaseData is either a C++ built-in type, or a C++ class that has
+// an assignment operation that overloads the "=" operator.
+
+template <class BaseData>
+class List
+{
+  protected:
+  // data structure(s), protected data, and possibly some
+  // functions, used in a particular implementation of the
+  // List ADT.
+
+  public:
+//***************************************************************
+// Interface for List constructor
+// GIVEN:    An uninitialized List object.
+// RETURN:   The List object initialized to an empty List.
+
+    List();
+
+//***************************************************************
+// Interface for List copy constructor
+// GIVEN:    An uninitialized List object;
+//           initlist -- a List object
+// RETURN:   The List object initialized with the node values and
+//           number of nodes of initlist, but with the current
+//           node being the first node.
+
+    List(List<BaseData> &initlist);
+
+//***************************************************************
+// Interface for List destructor
+// GIVEN:    A previously allocated List object.
+// RETURN:   The List object deallocated.
+
+    ~List();
+
+
+//***************************************************************
+// Interface for first operation
+// GIVEN:    A nonempty List object.
+// RETURN:   The List object with the first node as the current
+//           node.
+// RETURN as value of function: void
+
+    void first();
+
+//***************************************************************
+// Interface for last operation
+// GIVEN:    A nonempty List object.
+// RETURN:   The List object with the last node as the current
+//           node.
+// RETURN as value of function: void
+
+    void last();
+
+
+//***************************************************************
+// Interface for makeCurrent operation
+// GIVEN:    A nonempty List object,
+//           position -- an integer value between 1 and the number
+//                       of elements in the List.
+// RETURN:   The List object with the "position"th node as the
+//           current node.  If the position given is out of range,
+//           then the current operation will return a value of 0
+//           and all else about current should be regarded as
+//           unreliable.
+// RETURN as value of function: void
+
+    void makeCurrent(int position);
+
+
+
+//***************************************************************
+// Interface for prev operation
+// GIVEN:    A nonempty List object.
+// RETURN:   The List object with the node immediately preceding
+//           the existing current node as the new current node.  If
+//           the first node is the existing current node, then
+//           the "current" operation will return a value of 0 and
+//           and all else about current should be regarded as
+//           unreliable.
+// RETURN as value of function: void
+
+    void prev();
+
+
+
+//***************************************************************
+// Interface for next operation
+// GIVEN:    A nonempty List object.
+// RETURN:   The List object with the node immediately following
+//           the existing current node as the new current node. If
+//           the last node is the existing current node, then the
+//           "current" operation will return a value of 0 and all
+//           else about current should be regarded as unreliable.
+// RETURN as value of function: void
+
+    void next();
+
+
+//***************************************************************
+// Interface for current operation
+// GIVEN:    A List object.
+// RETURN as value of function: The position of the node
+//           identified as the current node.  If the List is empty
+//           or a makeCurrent, Next, or Prev operation has
+//           rendered the current node unreliable,  the value
+//           zero is returned.
+
+    int current();
+
+
+//***************************************************************
+// Interface for count operation
+// GIVEN:    A  List object.
+// RETURN as value of function:
+//           The number of nodes currently in the List.
+
+    int count();
+
+
+//***************************************************************
+// Interface for insertBefore operation
+// GIVEN:    A List object;
+//           item -- a data item to be inserted into the List.
+// RETURN:   The List with item inserted in a node immediately
+//           before the current node in the List, with the newly
+//           inserted node becoming the current node. If the
+//           List is empty, item becomes the first node in
+//           the List.
+// RETURN as value of function: void
+
+    void insertBefore(const BaseData &item);
+
+
+//***************************************************************
+// Interface for insertAfter operation
+// GIVEN:    A List object;
+//           item -- a data item to be inserted into the List.
+// RETURN:   The List with item inserted in a node immediately
+//           after the current item in the List, with the newly
+//           inserted node becoming the current node.  If the List
+//           is empty, item becomes the first node in the List.
+// RETURN as value of function: void
+
+    void insertAfter(const BaseData &item);
+
+
+
+//***************************************************************
+// Interface for remove operation
+// GIVEN:    A nonempty List object,
+// RETURN:   The List with current node removed. If there is more
+//           than one node in the List, the node immediately
+//           following the node removed will become the current
+//           node, unless the current node is the last node, in
+//           which case the node immediately before the current
+//           node becomes the new current node.
+// RETURN as value of function: void
+
+    void remove();
+
+
+
+//***************************************************************
+// Interface for replace operation
+// GIVEN:    A nonempty List object;
+//           item -- a data item to replace that of the current
+//                   node.
+// RETURN:   The List with the value item replacing that of the
+//           current node.
+// RETURN as value of function: void
+
+    void replace(const BaseData &item);
+
+
+
+//***************************************************************
+// Interface for examine operation
+// GIVEN:    A nonempty List object.
+// RETURN as value of function:
+//           The data of type BaseData being stored at the current
+//           node.
+
+    BaseData examine();
+
+
+//***************************************************************
+// Interface for List assign = operator
+// GIVEN:    A previously constructed List object;
+//           source -- a second List object that must have been
+//                     constructed with the same BaseData type as
+//                     the owner of the assign operator.
+// RETURN:   The contents of source have been copied to the List
+//           object that owns the operation.
+// RETURN as value of function: void
+
+    void operator = (const List<BaseData> &source);
+
+
+//**************************************************************
+
+
+

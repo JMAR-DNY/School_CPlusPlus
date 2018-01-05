@@ -1,0 +1,13 @@
+daisy	123
+donald	345
+goofy	654
+mickey	593
+minnie	489
+daffy	432
+pluto	765
+huey	321
+dewey	987
+lewey	554
+porky	333
+buggs	778
+

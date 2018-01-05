@@ -1,0 +1,39 @@
+		
+New England Patriots	5	0	0	1.000	2-0-0	3-0-0	1-0-0	1	
+New York Jets		4	1	0	.800	2-1-0	2-0-0	1-0-0	1	
+Buffalo Bills		3	3	0	.500	1-3-0	2-0-0	1-1-0	1	
+Miami Dolphins		2	3	0	.400	0-2-0	2-1-0	0-2-0	1	
+Cincinnati Bengals	6	0	0	1.000	3-0-0	3-0-0	1-0-0	2	
+Pittsburgh Steelers	4	2	0	.667	2-1-0	2-1-0	0-1-0	2	
+Cleveland Browns	2	4	0	.333	1-2-0	1-2-0	1-0-0	2	
+Baltimore Ravens	1	5	0	.167	0-2-0	1-3-0	1-2-0	2	
+Indianapolis Colts	3	3	0	.500	1-2-0	2-1-0	3-0-0	3	
+Houston Texans		2	4	0	.333	1-2-0	1-2-0	1-1-0	3	
+Tennessee Titans	1	4	0	.200	0-3-0	1-1-0	0-1-0	3	
+Jacksonville Jaguars	1	5	0	.167	1-2-0	0-3-0	0-2-0	3	
+Denver Broncos		6	0	0	1.000	2-0-0	4-0-0	2-0-0	4	
+Oakland Raiders		2	3	0	.400	1-2-0	1-1-0	0-1-0	4	
+San Diego Charger	2	4	0	.333	2-1-0	0-3-0	0-0-0	4	
+Kansas City Chiefs	1	5	0	.167	0-2-0	1-3-0	0-1-0	4	
+Philadelphia Eagles	3	3	0	.500	2-1-0	1-2-0	1-2-0	5	
+New York Giants		3	3	0	.500	2-1-0	1-2-0	1-2-0	5	
+Dallas Cowboys		2	3	0	.400	1-2-0	1-1-0	2-0-0	5	
+Washington Redskins	2	4	0	.333	2-1-0	0-3-0	1-1-0	5	
+Green Bay Packers	6	0	0	1.000	4-0-0	2-0-0	1-0-0	6	
+Minnesota Vikings	3	2	0	.600	3-0-0	0-2-0	1-0-0	6	
+Chicago Bears		2	4	0	.333	1-2-0	1-2-0	0-2-0	6	
+Detroit Lions		1	5	0	.167	1-2-0	0-3-0	1-1-0	6	
+Carolina Panthers	5	0	0	1.000	2-0-0	3-0-0	2-0-0	7	
+Atlanta Falcons		5	1	0	.833	3-0-0	2-1-0	0-1-0	7	
+Tampa Bay Buccaneers	2	3	0	.400	1-2-0	1-1-0	1-1-0	7	
+New Orleans Saints	2	4	0	.333	2-1-0	0-3-0	1-2-0	7	
+Arizona Cardinals	4	2	0	.667	2-1-0	2-1-0	1-1-0	8	
+Seattle Seahawks	3	4	0	.429	2-1-0	1-3-0	1-1-0	8	
+St. Louis Rams		2	3	0	.400	1-1-0	1-2-0	2-0-0	8	
+San Francisco 49ers	2	5	0	.286	2-2-0	0-3-0	0-2-0	8	
+
+
+
+
+
+

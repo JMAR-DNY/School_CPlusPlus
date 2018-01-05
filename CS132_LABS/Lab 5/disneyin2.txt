@@ -1,0 +1,7 @@
+Hewey Duck 123 90
+Daffy  Duck 342  92
+Wiley Coyote 432 89
+Goofy Dog  654 95
+Daisy Duck 145 92
+Sylvester PuddyCat 775 86
+Tweety Bird 221 87

@@ -1,0 +1,21 @@
+With a fill character of: ?,
+a field width of: 18,
+a justification of: left,
+and the string: Is this correct
+
+the output is: Is this correct???
+
+With a fill character of: !,
+a field width of: 21,
+a justification of: left,
+and the string: My Project works
+
+the output is: My Project works!!!!!
+
+With a fill character of: *,
+a field width of: 28,
+a justification of: right,
+and the string: I don't know
+
+the output is: ****************I don't know
+
