@@ -1,0 +1,69 @@
+/*************************************************************************************************
+*
+*   Function Name     :		getTtInfo
+*
+*   Purpose           :		parses data from a transition table file 
+*
+*   Input Parameters  :		inFile
+*
+*	Output parameters :		none
+*
+*   Return Value      :		none
+*
+*************************************************************************************************/
+template<class Key, typename T, typename J>
+void Table<Key, T, J>::getTtInfo()
+{
+	Pair<Key, T, J> kvpair; //Temp pair used to store temp data to insert into table.
+	int i=0, j=0, x=0;
+
+	while (inFile.good()) {
+
+		//checks input for whitespaces and blank lines
+		while (getline(inFile, str)) {
+			if (str.empty()) {
+				break;}
+			else {
+				while (str[i] != '\0') { //Tests each value in a string until termination char.
+					if (isspace(str[i]) || str[i] == 'B') { //Evaluates either a space or 'B'
+						i++;								//which makes it skip blank lines and
+						if (i = str.length()) {				//the col header.
+							getline(inFile, str);
+						}}
+					else {
+						break;}}}
+			stringstream iss(str);  //Takes the entire row and turns it into a string stream.
+
+			iss >> skipws >> iTemp; //Skips the row header.
+
+			iss >> skipws >> iTemp;
+			x = iTemp[0] + iTemp[1] + iTemp[2]; //Adds the ascii values of each piece of data.
+			kvpair.first = j, kvpair.second = A, kvpair.third = x;//Stores coords and ascii data.
+			insert(kvpair);						//Calls insert function to store pair in table.							
+
+			iss >> skipws >> iTemp;
+			x = iTemp[0] + iTemp[1] + iTemp[2];
+			kvpair.first = j, kvpair.second = B, kvpair.third = x;
+			insert(kvpair);
+
+			iss >> skipws >> iTemp;
+			x = iTemp[0] + iTemp[1] + iTemp[2];
+			kvpair.first = j, kvpair.second = C, kvpair.third = x;
+			insert(kvpair);
+
+			iss >> skipws >> iTemp;
+			x = iTemp[0] + iTemp[1] + iTemp[2];
+			kvpair.first = j, kvpair.second = D, kvpair.third = x;
+			insert(kvpair);
+
+			iss >> skipws >> iTemp;
+			x = iTemp[0] + iTemp[1] + iTemp[2];
+			kvpair.first = j, kvpair.second = E, kvpair.third = x;
+			insert(kvpair);
+
+			j++; //This counter changes the current column for inserting into the table.
+		}
+	}
+	inFile.close();
+}
+//////  END getTtInfo  //////
